@@ -11,12 +11,12 @@
     <div class='container'>
         <h1>Word Frequency</h1>
         <h3>
-            {% if result == 0 %}
-            Please take this seriously!
+            {% if result > 1 %}
+            You repeated the word {{ result }} times!
             {% elseif result == 1 %}
             You repeated the word only once!
-            {% elseif result > 1 %}
-            You repeated the word {{ result }} times!</h3>
+            {% else %}
+            Please take this seriously!
             {% endif %}
         </h3>
         <form action='/' method='get'>

@@ -4,16 +4,15 @@
 
         function evaluateWords($input1, $input2)
         {
-            $error = "";
-            if($input1 == "" || $input2 =="") {
-                $error = "empty";
-                return $error;
-            }
-
             $input1 = str_replace(array(',', '.', '?', '!'), '', $input1);
             $word_array = explode(" ", $input1);
             $output = 0;
 
+            if($input1 == "" || $input2 =="") {
+                $output = 0;
+                return $output;
+            }
+            
             for($i=0; $i<count($word_array); $i++)
             {
                 if(strtolower($word_array[$i]) == strtolower($input2))
