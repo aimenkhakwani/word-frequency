@@ -1,6 +1,6 @@
 # Word Frequency
 
-#### A web app that determines how many times a particular word is used in a sentence.
+#### A web app that determines how many times a particular word is used in a sentence. 9/16/2016
 
 #### By _**Aimen Khakwani**_
 
