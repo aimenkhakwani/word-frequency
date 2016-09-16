@@ -8,7 +8,7 @@
 
             for($i=0; $i<count($word_array); $i++)
             {
-                if($word_array[$i] == $input2)
+                if(strtolower($word_array[$i]) == strtolower($input2))
                 {
                     $output += 1;
                 }
