@@ -25,7 +25,7 @@ This website takes two inputs from the user, a sentence and a word, and returns 
     * How to test: Simply have the method return a number 1 regardless of input.
 
 * The program evaluates user input and returns the correct number of times the word is used in the sentence
-    * Example Input: "Jelly beans jelly beans", "beans"
+    * Example Input: "jelly beans jelly beans", "beans"
     * Example Output: 2
     * Why: This input and output will test that the program is correctly evaluating user input, and storing and returning the correct value.
     * How to test: Input a simple sentence like the once above and have an expected outcome of 2.
