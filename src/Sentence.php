@@ -3,6 +3,7 @@
     {
         function evaluateWords($input1, $input2)
         {
+            $input1 = str_replace(array(',', '.', '?', '!'), '', $input1);
             $word_array = explode(" ", $input1);
             $output = 0;
 

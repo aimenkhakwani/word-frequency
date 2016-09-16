@@ -36,6 +36,12 @@ This website takes two inputs from the user, a sentence and a word, and returns 
     * Why: This will ensure that the program is able to work even if users enter a sentence or a word that aren't consistent in capitalization
     * How to test: Enter an input that begins with a capitol letter and confirm that the program works.
 
+* The program ignores special characters like commas and periods.
+    * Example Input: "Hi Emma. How are you, are feeling better?" "are"
+    * Example Output: 2
+    * Why: This will ensure that the program is able to work even if users enter a question marks, commas and periods
+    * How to test: Enter an input that has special characters and ensure the program still returns a correct value.
+
 # Known Bugs
 
 There are no known bugs at this time.

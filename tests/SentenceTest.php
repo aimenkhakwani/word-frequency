@@ -35,15 +35,26 @@
         {
             //Arrange
             $test_Sentence = new Sentence;
-            $input1 = "hey You and you and You";
+            $input1 = "Hey You and you and You";
             $input2 = "You";
+            //Act
+            $result = $test_Sentence->evaluateWords($input1, $input2);
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
+        function test_evaluateWords_characters()
+        {
+            //Arrange
+            $test_Sentence = new Sentence;
+            $input1 = "Hi Emma. How are you, are you feeling better?";
+            $input2 = "are";
 
             //Act
             $result = $test_Sentence->evaluateWords($input1, $input2);
 
             //Assert
-            $this->assertEquals(3, $result);
+            $this->assertEquals(2, $result);
         }
-
     }
 ?>
