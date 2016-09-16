@@ -19,7 +19,7 @@
 
     $app->get('/output', function() use($app){
         $new_Sentence = new Sentence;
-        $result = $new_Sentence->evaluateWords($_GET['input1'], $_GET['input2']);
+        $result = $new_Sentence->validate($_GET['input1'], $_GET['input2']);
         return $app['twig']->render('output.html.twig', array('result' => $result));
     });
 
