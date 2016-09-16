@@ -21,14 +21,20 @@ This website takes two inputs from the user, a sentence and a word, and returns 
 * The program takes two user inputs and returns a number
     * Example Input: "Hello world", "Hello"
     * Example Output: 1
+    * Why: This input and output will confirms first and foremost that the program can return a number without any errors.
+    * How to test: Simply have the method return a number 1 regardless of input.
 
 * The program evaluates user input and returns the correct number of times the word is used in the sentence
-    * Example Input: "Hello world world", "world"
+    * Example Input: "Jelly beans jelly beans", "beans"
     * Example Output: 2
+    * Why: This input and output will test that the program is correctly evaluating user input, and storing and returning the correct value.
+    * How to test: Input a simple sentence like the once above and have an expected outcome of 2.
 
 * The program is able to evaluate user input regardless of capitalization
-    * Example Input: "Hello World world", "world"
-    * Example Output: 2
+    * Example Input: "Why hello to You, and you, and you", "you"
+    * Example Output: 3
+    * Why: This will ensure that the program is able to work even if users enter a sentence or a word that aren't consistent in capitalization
+    * How to test: Enter an input that begins with a capitol letter and confirm that the program works.
 
 # Known Bugs
 
