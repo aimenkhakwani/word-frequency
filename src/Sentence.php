@@ -1,8 +1,15 @@
 <?php
     class Sentence
     {
+
         function evaluateWords($input1, $input2)
         {
+            $error = "";
+            if($input1 == "" || $input2 =="") {
+                $error = "empty";
+                return $error;
+            }
+
             $input1 = str_replace(array(',', '.', '?', '!'), '', $input1);
             $word_array = explode(" ", $input1);
             $output = 0;

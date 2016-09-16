@@ -3,24 +3,25 @@
 <head>
     <meta charset="utf-8">
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <link href='css/stylles.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
     <title>Word Frequency</title>
 </head>
 <body>
     <div class='container'>
         <h1>Word Frequency</h1>
-        <h2>How many times do you repeat a word?</h2>
         <h3>
-            {% if result > 1 %}
-            You repeated the word {{ result }} times!</h3>
+            {% if result == 0 %}
+            Please take this seriously!
             {% elseif result == 1 %}
             You repeated the word only once!
+            {% elseif result > 1 %}
+            You repeated the word {{ result }} times!</h3>
             {% endif %}
         </h3>
-
         <form action='/' method='get'>
             <br>
-            <button type='submit' class='btn btn-lg btn-success'>Back</button>
+            <button type='submit' class='btn btn-lg btn-default'>Back</button>
         </form>
     </div>
 </body>
