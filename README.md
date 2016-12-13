@@ -7,7 +7,8 @@
 ## Description
 
 This website takes two inputs from the user, a sentence and a word, and returns the number of times the word appears in the sentence.
-<br>
+
+#### 
 <img src='web/img/specs.png' alt='specs'>
 
 ## Setup/Installation Requirements
